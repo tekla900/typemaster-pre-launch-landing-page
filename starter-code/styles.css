@@ -112,6 +112,10 @@ img {
     border-radius: 0;
 }
 
+main {
+    position: relative;
+}
+
 .sec-1 {
     display: flex;
     flex-direction: column;
@@ -243,9 +247,19 @@ footer span {
     margin-right: 2px;
 }
 
+.gray {
+    display: none;
+}
+
 @media (min-width: 768px) and (max-width: 1439px) {
-    header {
+
+    .sec-1, .sec-2, header, .flex-wrap, .sec-4 {
         width: 705px;
+        margin: 0 auto;
+    }
+
+    header {
+        margin-top: 40px;
     }
 
     h1 {
@@ -268,8 +282,7 @@ footer span {
 
     .sec-1 {
         flex-direction: row;
-        width: 705px;
-        margin: 0 auto;
+        margin-top: 62px;
         gap: 40px;
     }
     .child-1 {
@@ -295,8 +308,6 @@ footer span {
     .sec-2 {
         display: flex;
         height: 320px;
-        width: 705px;
-        margin: 0 auto;
         gap: 13px;
         justify-content: space-between;
         margin-top: 20px;
@@ -309,9 +320,7 @@ footer span {
     }
 
     .sec-4 {
-        margin: 0 auto;
         margin-top: 140px;
-        width: 705px; 
     }
 
     .card {
@@ -327,12 +336,110 @@ footer span {
 }
 
 @media (min-width: 1440px) {
-    header {
-        width: 1325px;
-        margin-top: 55px;
+    .sec-1, .sec-2, header, .flex-wrap, .sec-4 {
+        width: 1110px; 
+        margin: 0 auto;
     }
+
+    header {
+        margin-top: 55px;
+        margin-bottom: 150px;
+    }
+
     .sec-1 {
         flex-direction: row;
         height: 400px;
     }
+
+    .child-1 {
+        width: 445px;
+        margin: 0;
+    }
+
+    .keyboard {
+        background-image: url(./assets/desktop/image-keyboard.jpg);
+        width: 540px;
+        height: 480px;
+        border-radius: 16px;
+    }
+
+    .sec-2 {
+        display: flex;
+        height: 480px;
+        gap: 13px;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+
+    .phone {
+        background-image: url(./assets/desktop/image-phone-and-keyboard.jpg);
+        width: 225px;
+        height: 100%;
+        border-radius: 16px;
+    }
+
+    .glass {
+        background-image: url(./assets/desktop/image-glass-and-keyboard.jpg);
+        width: 445px;
+        height: 100%;
+    }
+
+    .flex-wrap {
+        display: flex;
+        align-items: center;
+    }
+    
+
+    .sec-4 {
+        margin-top: 168px;
+        gap: 24px;
+    }
+
+    .card {
+        align-items: flex-start;
+        text-align: left;
+        width: 255px;
+    }
+
+    h1 {
+        font-size: 56px;
+        line-height: 56px;
+    }
+    
+    h2 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    
+    h3 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    
+    p.med {
+        font-size: 18px;
+    }
+    
+    button {
+        height: 58px;
+        width: 175px;
+    }
+
+    .gray {
+        display: block;
+        position: absolute;
+        top: -90px;
+        right: 0;
+        height: 240px;
+        width: 125px;
+        background-color: var(--light-gray);
+        border-radius: 16px 0 0 16px;
+    }
+
+    .left {
+        top: 450px;
+        left: 0;
+        border-radius: 0 16px 16px 0;
+    }
+
 }
