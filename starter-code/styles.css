@@ -137,6 +137,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .sec-2 {
@@ -216,4 +217,85 @@ footer {
 footer span {
     font-weight: bold;
     margin-right: 2px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    header {
+        width: 705px;
+    }
+
+    h1 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    h2 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    h3 {
+        font-size: 24px;
+        line-height: 28px; 
+    }
+
+    .sec-1 {
+        flex-direction: row;
+        width: 705px;
+        margin: 0 auto;
+        gap: 40px;
+    }
+    .child-1 {
+        margin-left: 0;
+    }
+    #keyboard {
+        width: 50%;
+        margin-right: -30px;
+        /* gadasaketebelia */
+        margin-right: -calc(100vw + 30px);
+    }
+
+    .sec-2 {
+        display: flex;
+        height: 320px;
+        width: 705px;
+        margin: 0 auto;
+        gap: 13px;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .sec-2 img {
+        width: 445px;
+    }
+    #orange-filter {
+        width: 214px;
+        margin: 0;
+        border-radius: 16px;
+    }
+
+    .sec-3 {
+        flex-direction: row;
+        text-align: left;
+        margin-top: 87px;
+    }
+
+    .sec-4 {
+        margin: 0 auto;
+        margin-top: 140px;
+        width: 705px; 
+    }
+
+    .card {
+        align-items: flex-start;
+        text-align: left;
+        width: 280px;
+    }
+
+    button {
+        height: 58px;
+        width: 175px;
+    }
 }
